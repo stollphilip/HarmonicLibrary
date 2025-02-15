@@ -1,0 +1,132 @@
+﻿notes can appear in a chord or in a part. no need for note command.
+times can appear in a measure as a time signature, or in a note after a pitch
+. no need for time command.
+
+all commands begin with letters, except for notes which can begin with a number
+chars are separated from numbers by a space, blank, or dash
+
+measure without number
+measure without time signature
+	measure
+measure with time signature
+	measure 5:3:5, measure (5:3:5)
+measure with number
+measure without time signature
+	measure 1
+measure with time signature
+	measure 1 5:3:5, measure 1 (5:3:5)
+//measure with time command
+//	measure 1 time 5:3:5, measure 1 time (5:3:5)
+
+time signature without command
+time without beat
+	5, (5)
+time with beat
+	5:3:4, (5:3:4)
+
+Key C Major, Key C Major, Key-C Major
+
+chord without command
+chord without note command
+	10 12 14 16 (part numbers are implicit)
+	10 12 14 16 (5:3:5)
+	10 12 14 rest
+chord with command
+chord without note command
+	chord 10 12 14 16 (part numbers are implicit)
+	chord 10 12 14 16 (5:3:5)
+	chord 10 12 14 rest
+chord with part command
+	chord part 0 10 part 2 12 part 4 14 part 6 16
+	chord part 0 10 part 2 12 part 4 14 part 6 rest
+
+individual parts
+part with command
+	part 0 10 13 14
+part without note command
+	part 0 10 (5:3:5) 13 (5:3:5) 14 (5:3:5)
+
+chord
+chord 10 20 30 40, chord10 20 30 40, chord-10 20 30 40, 10 20 30 40
+
+note without command
+note without duration
+	1A, -17, 1Af, 16s, 1Aff, 16ss
+	//C4, Eb4, C#4, B𝄫4, F𝄪4
+	//C4, Ef4, Cs4, Bff4, Fss4
+note with duration
+	10 5:3:5, 10(5:3:5)
+	10 5, 10(5)
+note with command
+note without duration
+	note 10, note10, note-10
+	note C4, note C#4, note Eb4
+	??? pitch 10, pitch10, pitch-10
+note with duration
+	note 10 5:3:5, note 10(5:3:5)
+
+duration
+duration 1.25, duration1.25, duration-1.25
+duration 1.25 5:3:5
+(1.25), (1.25 5:3:5)
+
+note pitch and rest
+10 11 12 13 14 15 16 17 18 19 1A 1B
+-10 -20 -30 -40
+-(10)
+Fsharp Fs F#
+Fsharp4 Fs4 F#4
+Eflat Ef Eb
+rest r
+
+note duration
+number of beats
+5 3 1 2.5 1.5 0.5 1.25 0.75 0.25 0.625 0.375 0.125 - number of beats
+Duration5 d5
+count:numerator:denominator
+4:4:5
+tie to next note
+5tie 5^
+
+measure
+Measure 1, m1
+Measure m
+
+meter
+5:3:5 number_of_beats:beats:pulse
+Meter5:3:5 m5:3:5
+
+parts
+Part0 note note note note
+Chord pitch pitch pitch pitch Duration
+
+shortcuts
+A
+B = flat, Bar, Beat 1
+Chord (chords can encode parts)
+Duration, Dot
+E
+Flat
+G
+H
+I
+J
+K
+L
+Major (C major), Measure 1, Meter 4:2:1
+Note
+O
+Part, Pitch, Pulse = beats per minute
+Q
+Rest
+Sharp
+Tempo = beat speed, Tie = ^
+U
+V
+W
+X
+Y
+Z
+# = sharp
+| = measure
+*/

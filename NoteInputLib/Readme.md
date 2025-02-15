@@ -1,0 +1,1 @@
+﻿NoteInputLib.csproj handles text-based note input. It is referenced by HarmonicAnalysisLib.csproj.

@@ -1,0 +1,50 @@
+﻿How to find Shortest Paths from Source to all Vertices using Dijkstra’s Algorithm
+https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+GFG_1.cs
+simple code - O(V^2)
+int src
+int[,] graph
+	adjacency matrix
+int[] dist
+	dist[i] holds distance from src to i
+bool[] sptSet "shortest path tree"
+	sptSet[i] shortest distance path from src to i is finalized
+int u = minDistance()
+	get the min distance vertex
+int v
+	dist[v] = dist[u] + graph[u, v]
+	v unvisited, and adjacent to u
+
+
+Dijkstra’s Algorithm for Adjacency List Representation | Greedy Algo-8
+https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-representation-greedy-algo-8/
+GFG_2.cs
+use min heap (SortedList) - O(ELogV)
+
+int src
+List<List<AdjListNode>> graph "adjacency list"
+	graph[n] list of nodes adjacent to n
+int[] distance
+	distance[i] holds distance from src to i
+SortedSet<AdjListNode> pq "priority queue"
+current
+	node popped off "prioirity queue"
+
+Shortest Path : Dijkstra Algorithm With Rust, C#, C++
+https://medium.com/@kriangkrai.ratt/shortest-path-dijkstra-algorithm-with-rust-8fe1867d052a
+DijkstraShortestPath.cs
+3 classes
+
+adaptating Dijkstra
+find shortest path source and end vertexes
+get shortest path as linked list
+
+vertex has int index, double weight, Frame data
+the vertexes are the initial and final Frames
+The distances are provided by the Segments. 
+In the case of two Frames connected by multiple Segments, take the shortest Segment
+Otherwise, Segments are not needed by the algorithm
+do not add the same distance twice
+find the source node in the shortest path, run the algorithms on every source node
+find the end node in the shortest path
+extract the shortest path

@@ -1,0 +1,1 @@
+﻿HarmonicAnalysisCommonLib.csproj defines the public interface to HarmonicAnalysisLib. 

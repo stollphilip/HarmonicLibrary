@@ -1,0 +1,1 @@
+﻿TextMetricLib.csproj enables symbols belonging to Font families to be positioned withing Grid cells.

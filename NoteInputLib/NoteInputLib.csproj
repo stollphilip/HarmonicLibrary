@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ParseInputNew.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HarmonicAnalysisCommonLib\HarmonicAnalysisCommonLib.csproj" />
+    <ProjectReference Include="..\HarmonicAnalysisLib\HarmonicAnalysisLib.csproj" />
+  </ItemGroup>
+
+</Project>

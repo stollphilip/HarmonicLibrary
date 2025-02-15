@@ -1,0 +1,1 @@
+﻿ScoreLibrary.csproj handles graphical score layout. It is important that it not reference HarmonicAnalysisLib.csproj. Instead, it uses Lite classes.

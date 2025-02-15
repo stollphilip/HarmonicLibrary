@@ -1,0 +1,1 @@
+﻿TextMetricUI is a user interface program for setting TexMetricLib values in an interactive fashion.

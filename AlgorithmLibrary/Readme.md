@@ -1,0 +1,1 @@
+﻿AlgorithmLibrary.csproj tests algorithms. It is not referenced by any other project.

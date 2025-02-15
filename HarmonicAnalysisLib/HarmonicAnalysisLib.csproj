@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MusicXML\MusicXMLExtensions.cs" />
+    <Compile Remove="MusicXML\sample_scorepartwise.cs" />
+    <Compile Remove="MusicXML\scorepartwise.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HarmonicAnalysisCommonLib\HarmonicAnalysisCommonLib.csproj" />
+  </ItemGroup>
+
+</Project>
